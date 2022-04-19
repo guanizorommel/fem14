@@ -24,5 +24,41 @@ body {
     display: flex; /*Make this a flex so that items inside of it can be aligned*/
     justify-content: center; /*Positions flex items to center horizontaly ( X axis )*/
     align-items: center; /*Positions flex items to center vertically (Y axis>*/
-    border: 3px solid red;
+}
+
+.card-box { /*This is now flex item. parent is container*/
+    background-color: var(--White);
+    height: 460px; /*Sets hard height*/
+    width: 300px; /*Sets hard width*/
+    border-radius: 20px;
+    padding: 20px;
+
+    display: flex; /*Make this a flex parent. all of items inside of this will become flex-item*/
+    flex-direction: column; /*The default flex-direction is row, i changed it to column*/
+    justify-content: space-between; /*add space between flex item depending on remaining space*/
+}
+
+h1 {
+    font-size: 1.2em;
+    font-family: "Outfit", sans-serif;
+    color: var(--Dark-Blue);
+    text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+p {
+    font-size: 15px;
+    font-family: "Outfit", sans-serif;
+    color: var(--Grayish-Blue);
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
 }
