@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /*Colors*/
+    --White: hsl(0, 0%, 100%);
+    --Light-Gray: hsl(212, 45%, 89%);
+    --Grayish-Blue: hsl(220, 15%, 55%);
+    --Dark-Blue: hsl(218, 44%, 22%);  
+}
+    
+body {
+    max-width: max-content; /*This makes the body in max-width based on the content*/
+    margin: auto; /*This makes the body all of its items inside automatically centered y and x axis*/
+    background-color: var(--Light-Gray);
+}
+
+.container {
+    max-width: 1440px; /*Add maximum width for this container*/
+    height: 100vh; /*makes the container 100% view height*/
+    display: flex; /*Make this a flex so that items inside of it can be aligned*/
+    justify-content: center; /*Positions flex items to center horizontaly ( X axis )*/
+    align-items: center; /*Positions flex items to center vertically (Y axis>*/
+    border: 3px solid red;
+}
